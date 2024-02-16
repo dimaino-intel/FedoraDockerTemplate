@@ -1,0 +1,8 @@
+services:
+  fedora-template:
+    container_name: fedora-template
+    image: fedora-template
+    command: /bin/bash
+    cap_add:
+      - SYS_ADMIN
+      - DAC_READ_SEARCH
